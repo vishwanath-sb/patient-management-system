@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://your-app.up.railway.app';
 
 export const getToken = (): string | null => {
   if (typeof window !== 'undefined') {
