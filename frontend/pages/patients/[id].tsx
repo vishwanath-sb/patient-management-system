@@ -49,6 +49,7 @@ export default function PatientDetail() {
   };
 
   const getBadgeClass = (verdict: string) => {
+    if (!verdict) return 'badge';
     switch (verdict.toLowerCase()) {
       case 'underweight':
         return 'badge badge-underweight';
