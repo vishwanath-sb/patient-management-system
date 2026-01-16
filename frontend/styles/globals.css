@@ -297,7 +297,7 @@ body {
   margin-bottom: 5px;
 }
 
-.detail-item value {
+.detail-item .detail-value {
   display: block;
   color: #333;
   font-size: 16px;

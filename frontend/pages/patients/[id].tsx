@@ -91,53 +91,53 @@ export default function PatientDetail() {
           <div className="detail-grid">
             <div className="detail-item">
               <label>Patient ID</label>
-              <value>{patient.id}</value>
+              <div className="detail-value">{patient.id}</div>
             </div>
             <div className="detail-item">
               <label>Age</label>
-              <value>{patient.age} years</value>
+              <div className="detail-value">{patient.age} years</div>
             </div>
             <div className="detail-item">
               <label>Gender</label>
-              <value>{patient.gender}</value>
+              <div className="detail-value">{patient.gender}</div>
             </div>
             <div className="detail-item">
               <label>City</label>
-              <value>{patient.city}</value>
+              <div className="detail-value">{patient.city}</div>
             </div>
             <div className="detail-item">
               <label>Height</label>
-              <value>{patient.height} meters</value>
+              <div className="detail-value">{patient.height} meters</div>
             </div>
             <div className="detail-item">
               <label>Weight</label>
-              <value>{patient.weight} kg</value>
+              <div className="detail-value">{patient.weight} kg</div>
             </div>
             <div className="detail-item">
               <label>BMI</label>
-              <value>{patient.bmi}</value>
+              <div className="detail-value">{patient.bmi}</div>
             </div>
             <div className="detail-item">
               <label>Health Verdict</label>
-              <value>
+              <div className="detail-value">
                 <div className={getBadgeClass(patient.verdict)}>{patient.verdict}</div>
-              </value>
+              </div>
             </div>
             {patient.diagnosis && (
               <div className="detail-item detail-full">
                 <label>Diagnosis</label>
-                <value>{patient.diagnosis}</value>
+                <div className="detail-value">{patient.diagnosis}</div>
               </div>
             )}
             {patient.prescription && (
               <div className="detail-item detail-full">
                 <label>Prescription</label>
-                <value>{patient.prescription}</value>
+                <div className="detail-value">{patient.prescription}</div>
               </div>
             )}
             <div className="detail-item detail-full">
               <label>Created At</label>
-              <value>{new Date(patient.created_at).toLocaleString()}</value>
+              <div className="detail-value">{new Date(patient.created_at).toLocaleString()}</div>
             </div>
           </div>
         </div>
